@@ -14,8 +14,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.7.RELEASE</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>1.5.9.RELEASE</version>
+		<relativePath/>
 	</parent>
 
 	<properties>
@@ -28,7 +28,28 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
+		   <exclusions>
+		        <exclusion>
+		          <groupId>ch.qos.logback</groupId>
+		          <artifactId>logback-classic</artifactId>
+		        </exclusion>
+		        <exclusion>
+		          <groupId>ch.qos.logback</groupId>
+		          <artifactId>logback-core</artifactId>
+		        </exclusion>
+      		</exclusions>
 		</dependency>
+		<dependency>		    
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-classic</artifactId>
+			<version>1.2.3</version>		 
+		</dependency>
+		<dependency>		    
+			<groupId>ch.qos.logback</groupId>
+			<artifactId>logback-core</artifactId>
+			<version>1.2.3</version>		 
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.elasticsearch.client</groupId>
