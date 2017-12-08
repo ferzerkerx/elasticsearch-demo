@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>elasticsearch-demo</name>
-	<description>Demo project for Spring Boot</description>
+	<description>elasticsearch Demo project</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
