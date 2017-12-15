@@ -1,5 +1,7 @@
 # Elastic Search Demo
 
+[![Build Status](https://travis-ci.org/ferzerkerx/elasticsearch-demo.svg?branch=master)](https://travis-ci.org/ferzerkerx/elasticsearch-demo)
+
 SpringBoot application that pushes to ES and then reads from it and prints it for learning purposes
 
 Dependencies:
