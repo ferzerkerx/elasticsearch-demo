@@ -13,11 +13,13 @@ public final class Util {
     }
 
     @Nonnull
+    @SuppressWarnings("all")
     public static Optional<String> toJson(@Nonnull EventData event) {
         ObjectMapper objectMapper = new ObjectMapper();
         try {
             return Optional.of(objectMapper.writeValueAsString(event));
-        } catch (JsonProcessingException ignored) {
+        }
+        catch (JsonProcessingException ignored) {
         }
         return Optional.empty();
     }

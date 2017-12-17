@@ -11,7 +11,7 @@ public class FakeEventDataRepositoryImpl implements EventDataRepository {
 
     @Nonnull
     @Override
-    public Stream<? extends EventData> findBy(@Nonnull EventDataQuery query) {
+    public Stream<EventData> findBy(@Nonnull EventDataQuery query) {
         return Stream.generate(this::createEventData)
                 .limit(query.getMaxNumberOfEntries());
     }

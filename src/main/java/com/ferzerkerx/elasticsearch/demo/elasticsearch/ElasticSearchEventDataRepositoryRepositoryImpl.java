@@ -33,7 +33,7 @@ public class ElasticSearchEventDataRepositoryRepositoryImpl implements ElasticSe
 
     @Override
     @Nonnull
-    public Stream<? extends EventData> findBy(@Nonnull EventDataQuery query) {
+    public Stream<EventData> findBy(@Nonnull EventDataQuery query) {
         final AtomicReference<DocumentContext> currentContext = new AtomicReference<>();
         return Stream.generate(() -> findResultsInEs(currentContext))
                 .onClose(() -> clearScrollIfRequired(currentContext.get()))

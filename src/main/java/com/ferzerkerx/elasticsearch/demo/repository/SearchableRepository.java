@@ -6,5 +6,5 @@ import java.util.stream.Stream;
 public interface SearchableRepository<T, Q> {
 
     @Nonnull
-    Stream<? extends T> findBy(@Nonnull Q query);
+    Stream<T> findBy(@Nonnull Q query);
 }
