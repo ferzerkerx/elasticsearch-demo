@@ -1,7 +1,7 @@
 # Elastic Search Demo
 
 [![Build Status](https://travis-ci.org/ferzerkerx/elasticsearch-demo.svg?branch=master)](https://travis-ci.org/ferzerkerx/elasticsearch-demo)
-[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=com.ferzerkerx.elasticsearch%3Aelasticsearch-demo)](https://sonarcloud.io/dashboard/index/com.ferzerkerx.elasticsearch%3Aelasticsearch-demo)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.ferzerkerx.elasticsearch%3Aelasticsearch-demo&metric=alert_status)](https://sonarcloud.io/dashboard/index/com.ferzerkerx.elasticsearch%3Aelasticsearch-demo)
 
 
 SpringBoot application that pushes to ES and then reads from it and prints it for learning purposes
