@@ -10,6 +10,7 @@ import java.util.Optional;
 public final class Util {
 
     private Util() {
+        throw new AssertionError();
     }
 
     @Nonnull
